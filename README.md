@@ -6,12 +6,12 @@ Specify following environmental variables in `.env` file:
 
 ```shell
 AWS_ACCESS_KEY_ID="<YOUR_ACCESS_KEY>"
-AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS"
+AWS_SECRET_ACCESS_KEY="<AWS_SECRET_ACCESS_KEY>"
 AWS_DEFAULT_REGION="eu-central-1"
 AWS_REGION="eu-central-1"
-AWS_ROLE_ARN="arn:aws:iam::212762837485:role/<YOUR_ASSUME_ROLE>"
+AWS_ROLE_ARN="arn:aws:iam::<AWS_ACCOUNT_ID>:role/<YOUR_ASSUME_ROLE>"
 AWS_ROLE_SESSION_NAME="<ANY_SESSION_NAME>"
-MFA_SERIAL_NUMBER="arn:aws:iam::447340066977:mfa/<YOUR_MFA_NAME>"
+MFA_SERIAL_NUMBER="arn:aws:iam::<AWS_SECUTIRY_ACCOUNT_ID>:mfa/<YOUR_MFA_NAME>"
 ```
 
 ## Run Jupyter Notebook with custom image
